@@ -1,0 +1,32 @@
+.avatar-wrapper{
+    position: relative;
+}
+.gradient-border{
+    position: absolute;
+    top: 70px;
+    left: -10px;
+    width: 300px;
+    height: 300px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background: var(--gradientToPink);
+}
+.avatar-container{
+    position: absolute;
+    top: 50px;
+    left: 120px;
+}
+.avatar-container img{
+    width: 300px;
+    height: 300px;
+}
+.code-icon{
+    position: absolute;
+    top: 30px;
+    left: -70px;
+}
+.pen-icon{
+    position: absolute;
+    top: 350px;
+    left: 250px;
+}

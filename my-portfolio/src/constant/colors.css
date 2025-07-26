@@ -1,0 +1,9 @@
+:root {
+    --primary: #DB2777;
+    --secondary: #60A5FA;
+    --accent: #F9A8D4;
+    --text-menu: #4B5563;
+    --gradientBackground: linear-gradient(to right, #FAF5FF, #EBF9FE, #FEECFE);
+    --gradientToBlue: linear-gradient(to right, #F9A8D4, #60A5FA);
+    --gradientToPink: linear-gradient(to right, #60A5FA, #F9A8D4);
+}
