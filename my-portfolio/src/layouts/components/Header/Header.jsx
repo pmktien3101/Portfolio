@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom"
-import ROUTE from "../../routes"
 import "./styles.css"
+import ROUTE from "../../../routes"
 const HeaderComponent = () => {
     return (
             <div className="header-content">

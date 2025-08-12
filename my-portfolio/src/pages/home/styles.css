@@ -1,25 +1,11 @@
 .home-container{
-    width: 100vw;
-    height: 100%;
-    flex-direction: column;
-}
-.header-container{
-    padding-top: 20px;
-}
-.content-container{
     display: flex ;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin: 0 auto;
-    padding: 0 100px;
 }
 .content-left{
    flex: 1;
    display: flex;
-   justify-content: flex-start;
-   align-items: flex-start;
-   align-self: flex-start;
+   margin-left: 100px;
 }
 .content-right{
     flex: 1;
@@ -48,21 +34,4 @@
 .button-container{
     margin-top: 40px;
     gap: 20px;
-}
-.find-container{
-    display: flex;
-    justify-content: center;
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
-.find-wrapper{
-    flex-direction: column;
-    padding: 20px;
-}
-.find-wrapper h2{
-    color: white;
-}
-.icon-link{
-    display: flex;
-    gap: 40px;
 }

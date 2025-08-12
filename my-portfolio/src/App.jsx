@@ -5,15 +5,18 @@ import AboutComponent from "./pages/about/About"
 import SkillComponent from "./pages/skill/Skill"
 import ProjectComponent from "./pages/project/Project"
 import ContactComponent from "./pages/contact/Contact"
+import MainLayout from "./layouts/MainLayout"
 
 function App() {
   return (
     <Routes>
-    <Route path={ROUTE.HOME} element={<HomeComponent/>}/>
-    <Route path={ROUTE.ABOUT} element={<AboutComponent/>}/>
-    <Route path={ROUTE.SKILL} element={<SkillComponent/>}/>
-    <Route path={ROUTE.PROJECT} element={<ProjectComponent/>}/>
-    <Route path={ROUTE.CONTACT} element={<ContactComponent/>}/>
+    <Route path="/" element={<MainLayout/>}>
+      <Route index element={<HomeComponent/>}/>
+      <Route path={ROUTE.ABOUT} element={<AboutComponent/>}/>
+      <Route path={ROUTE.SKILL} element={<SkillComponent/>}/>
+      <Route path={ROUTE.PROJECT} element={<ProjectComponent/>}/>
+      <Route path={ROUTE.CONTACT} element={<ContactComponent/>}/>
+    </Route>
   </Routes>
   )
 }
