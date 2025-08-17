@@ -7,6 +7,10 @@
 }
 .logo-text{
     font-size: 32px;
+    transition: transform 0.3s ease;
+}
+.logo-text:hover {
+    transform: scale(1.05);
 }
 .logo-name{
     color: var(--primary);
@@ -16,30 +20,47 @@
     left: 50%;
     transform: translateX(-50%);
     display: flex;
-    flex-direction: row;
     list-style-type: none;
     gap: 20px;
     padding: 10px 80px;
     border-radius: 20px;
-    background-color: white;
-    box-shadow: 0 2px 14px rgba(155, 153, 153, 0.4);
-    border: 1px solid #dbdbdb;
+    background: (255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border: 1px solid (220, 220, 220, 0.6);
+    animation: fadeDown 0.5s ease;
+}
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -20px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
 }
 .menu-item a {
+    position: relative;
     color: var(--text-menu);
-    font-size: 20px;
-    font-weight: 400;
+    font-size: 18px;
+    font-weight: 300;
     text-decoration: none;
+    padding: 5px 0;
+    transition: color 0.3s ease;
 }
-.menu-item a.active {
+.menu-item a::after {
     color: var(--secondary);
-    text-decoration: underline;
-    text-underline-offset: 8px;
-    text-decoration-thickness: 2px;
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 0;
+    background: var(--gradientToPink);
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease;
 }
-.menu-item:hover a {
-    text-decoration: underline;
-    text-decoration-color: var(--secondary);
-    text-underline-offset: 8px;
-    text-decoration-thickness: 2px;
+.menu-item a:hover::after,
+.menu-item a.active::after {
+   width: 100%;
 }
