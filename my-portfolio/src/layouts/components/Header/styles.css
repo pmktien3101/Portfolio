@@ -50,7 +50,6 @@
     transition: color 0.3s ease;
 }
 .menu-item a::after {
-    color: var(--secondary);
     position: absolute;
     content: '';
     height: 2px;

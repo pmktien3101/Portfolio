@@ -16,8 +16,6 @@ const HeaderComponent = () => {
                         <NavLink to={ROUTE.PROJECT} className={({isActive}) => isActive ? "active" : ""}>Projects</NavLink>  </li>
                     <li className="menu-item">
                         <NavLink to={ROUTE.SKILL} className={({isActive}) => isActive ? "active" : ""}>Skills</NavLink>  </li>
-                    <li className="menu-item">
-                        <NavLink to={ROUTE.CONTACT} className={({isActive}) => isActive ? "active" : ""}>Contact</NavLink>  </li>
                 </ul>
             </div>
     )
