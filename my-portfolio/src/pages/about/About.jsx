@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./styles.css";
-import { FaBullseye, FaCheckDouble, FaGraduationCap, FaHeart, FaQuoteLeft, FaRocket, FaUber, FaUser } from "react-icons/fa";
+import { FaBullseye, FaCheckCircle, FaCheckDouble, FaGraduationCap, FaHeart, FaQuoteLeft, FaRocket, FaUber, FaUser } from "react-icons/fa";
 
 const AboutComponent = () => {
     const [activeTab, setActiveTab] = useState("bio");
@@ -43,7 +43,7 @@ const AboutComponent = () => {
                 <div className="tabs-content">
                     {activeTab === "bio" && (
                         <div className="tab-bio">
-                            <h2 className="bio-title">Personal Bio</h2>
+                            <h2 className="title">Personal Bio</h2>
                             <div className="bio-card bio-about">
                               <h3> <FaQuoteLeft className="bio-icon"/> About Me</h3>
                               <p>
@@ -72,16 +72,30 @@ const AboutComponent = () => {
                     )}
                     {activeTab === "education" && (
                         <div className="tab-education">
-                            <p>
-                                Currently pursuing a degree in Computer Science at XYZ University, where I have honed my skills in programming and software development.
-                            </p>
+                            <h2 className="title">Personal Education</h2>
+                            <div className="bio-card education-about">
+                                <p>
+                                    I am currently pursuing a Bachelor's degree in Software Engineering at FPT University, where I have gained a solid foundation in programming, algorithms, and software design principles.
+                                </p> 
+                                <ul className="education-list">
+                                    <li><FaCheckCircle className="bio-icon"/> GPA: 3.6/4.0</li>
+                                    <li><FaCheckCircle className="bio-icon"/> Scholarship: 50,000,000 VND for startup project</li>
+                                    <li><FaCheckCircle className="bio-icon"/> JLPT N4 – Japanese Language Proficiency</li>
+                                    <li><FaCheckCircle className="bio-icon"/> TOEIC – 600</li>
+                                    <li><FaCheckCircle className="bio-icon"/> UX Design Certificate – Coursera</li>
+                                    <li><FaCheckCircle className="bio-icon"/> Responsive Web Design – FreeCodeCamp</li>
+                                </ul>                          
+                            </div>
                         </div>
                     )}
                     {activeTab === "interests" && (
                         <div className="tab-interests">
+                            <h2 className="title">Personal Interests</h2>
+                            <div className="bio-card interests-about">
                             <p>
                                 I have a keen interest in web development, artificial intelligence, and open-source contributions.
                             </p>
+                            </div>
                         </div>
                     )}
                 </div>
