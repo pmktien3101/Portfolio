@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./styles.css";
-import { FaBullseye, FaCheckCircle, FaCheckDouble, FaGraduationCap, FaHeart, FaQuoteLeft, FaRocket, FaUber, FaUser } from "react-icons/fa";
+import { FaBullseye, FaCamera, FaCameraRetro, FaCheckCircle, FaCheckDouble, FaGraduationCap, FaHeart, FaMusic, FaPaintRoller, FaPalette, FaQuoteLeft, FaRocket, FaSpa, FaUber, FaUser } from "react-icons/fa";
 
 const AboutComponent = () => {
     const [activeTab, setActiveTab] = useState("bio");
@@ -47,24 +47,24 @@ const AboutComponent = () => {
                             <div className="bio-card bio-about">
                               <h3> <FaQuoteLeft className="bio-icon"/> About Me</h3>
                               <p>
-                                I am a passionate software engineering student with a strong interest in web development and artificial intelligence. I enjoy solving complex problems and continuously learning new technologies.
+                                I am a passionate software engineering student with a strong interest in web development and artificial intelligence. I enjoy solving complex problems and continuously learning new technologies
                               </p>
                             </div>
                             <div className="bio-row">
                               <div className="bio-card bio-goals">
                                 <h3> <FaBullseye className="bio-icon"/> Short-term Goals</h3>
                                 <ul>
-                                    <li>Complete my degree with a focus on software engineering.</li>
-                                    <li>Contribute to open-source projects.</li>
-                                    <li>Build a portfolio of web applications.</li>
+                                    <li>Complete my degree with a focus on software engineering</li>
+                                    <li>Contribute to open-source projects</li>
+                                    <li>Build a portfolio of web applications</li>
                                 </ul>
                               </div>
                               <div className="bio-card bio-long-term-goals">
                                     <h3> <FaRocket className="bio-icon"/> Long-term Goals</h3>
                                     <ul>
-                                        <li>Become a full-stack developer.</li>
-                                        <li>Work on innovative AI projects.</li>
-                                        <li>Mentor aspiring developers.</li>
+                                        <li>Become a full-stack developer</li>
+                                        <li>Work on innovative AI projects</li>
+                                        <li>Mentor aspiring developers</li>
                                     </ul>
                               </div>
                             </div>
@@ -75,10 +75,10 @@ const AboutComponent = () => {
                             <h2 className="title">Personal Education</h2>
                             <div className="bio-card education-about">
                                 <p>
-                                    I am currently pursuing a Bachelor's degree in Software Engineering at FPT University, where I have gained a solid foundation in programming, algorithms, and software design principles.
+                                    I am currently pursuing a Bachelor's degree in Software Engineering at FPT University, where I have gained a solid foundation in programming, algorithms, and software design principles
                                 </p> 
                                 <ul className="education-list">
-                                    <li><FaCheckCircle className="bio-icon"/> GPA: 3.6/4.0</li>
+                                    <li><FaCheckCircle className="bio-icon"/> GPA: 3.4/4.0</li>
                                     <li><FaCheckCircle className="bio-icon"/> Scholarship: 50,000,000 VND for startup project</li>
                                     <li><FaCheckCircle className="bio-icon"/> JLPT N4 – Japanese Language Proficiency</li>
                                     <li><FaCheckCircle className="bio-icon"/> TOEIC – 600</li>
@@ -91,10 +91,54 @@ const AboutComponent = () => {
                     {activeTab === "interests" && (
                         <div className="tab-interests">
                             <h2 className="title">Personal Interests</h2>
-                            <div className="bio-card interests-about">
-                            <p>
-                                I have a keen interest in web development, artificial intelligence, and open-source contributions.
-                            </p>
+                            
+                            <div className="bio-row interest-about">
+                                <div className="bio-card interest-column">
+                                    <div className="interest-icon-container">
+                                      <FaPalette className="interest-icon"/> 
+                                    </div>
+                                    <div className="interest-content">
+                                        <h3>UX/UI Design</h3>
+                                        <p>
+                                            Love creating beautiful interfaces and great user experiences
+                                        </p>
+                                    </div>
+                                </div>
+                                <div className="bio-card interest-column">
+                                    <div className="interest-icon-container">
+                                      <FaCamera className="interest-icon"/> 
+                                    </div>
+                                    <div className="interest-content">
+                                        <h3>Photography</h3>
+                                        <p>
+                                            Capturing life’s moments and telling stories through photos
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="bio-row interest-about">
+                                <div className="bio-card interest-column">
+                                    <div className="interest-icon-container">
+                                      <FaMusic className="interest-icon"/> 
+                                    </div>
+                                    <div className="interest-content">
+                                        <h3>Music</h3>
+                                            <p>Listening to diverse genres and finding inspiration in melodies</p>
+                                    </div>
+                                </div>
+                                <div className="bio-card interest-column">
+                                    <div className="interest-icon-container">
+                                      <FaSpa className="interest-icon"/> 
+                                    </div>
+                                    <div className="interest-content">
+                                        <h3>Yoga</h3>
+                                         <p>Practicing mindfulness and balance with daily yoga</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="interest-bio">
+                                <p><strong>Philosophy of life: </strong> 
+                               I believe that pursuing my passion and constantly learning are the keys to personal growth. Each hobby gives me different perspectives on life and helps me become a more well-rounded person</p>
                             </div>
                         </div>
                     )}
